@@ -1,11 +1,21 @@
 package io.github.dougllasfps.imageliteapi;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
-public class ImageliteapiApplication {
+@EnableJpaAuditing
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 
+public class ImageliteapiApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ImageliteapiApplication.class, args);
 	}
