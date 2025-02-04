@@ -40,7 +40,7 @@ public class ImagesController {
         return  ResponseEntity.created(imageURI).build();
     }
 
-    @GetMapping ("{id}")
+    @GetMapping ("/{id}")
     public ResponseEntity<byte[]> getImage(@PathVariable("id") String id){
         var possibleImage = service.getById(id);
         if(possibleImage.isEmpty()){
