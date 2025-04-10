@@ -2,10 +2,10 @@ package io.github.dougllasfps.imageliteapi.infra.repository;
 
 import io.github.dougllasfps.imageliteapi.domain.entity.Image;
 import io.github.dougllasfps.imageliteapi.domain.enums.ImageExtension;
-import org.h2.util.StringUtils;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+import org.springframework.util.StringUtils;
 
 import java.util.List;
 import java.util.Optional;
